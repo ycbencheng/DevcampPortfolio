@@ -23,3 +23,15 @@ Things you may want to cover:
 
 * ...
 # DevcampPortfolio
+
+### Features
+-Real time chat engine for comments
+- Blog
+
+### Code Example
+
+ruby
+def my_method
+  put "whit"
+  end
+  
