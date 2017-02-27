@@ -5,7 +5,11 @@
   get 'contact', to: 'pages#contact' 
   get 'about', to: 'pages#about'
   
-  resources :blogs
+  resources :blogs do 
+    member do
+      post :toggle_status
+    end
+  end
 
   root to: 'pages#home'
 
