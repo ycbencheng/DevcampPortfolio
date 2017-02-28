@@ -1,5 +1,4 @@
 class Skill < ApplicationRecord
 
-validates_presence_of :title, :percent_useage
+validates_presence_of :title, :percent_usage
 end
-2
