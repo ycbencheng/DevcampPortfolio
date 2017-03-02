@@ -1,9 +1,9 @@
 class Skill < ApplicationRecord
-<<<<<<< HEAD
-  Validates_presence_of :title, :percent_usage
-=======
 
-validates_presence_of :title, :percent_useage
->>>>>>> data-feature
+  include Placeholder
+  validates_presence_of :title, :percent_usage
+  def set_defaults
+    self.badge ||= Placeholder.image_generator(height: '250', width: '250')
+    
+  end
 end
-2
