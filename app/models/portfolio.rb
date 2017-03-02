@@ -18,4 +18,5 @@ class Portfolio < ApplicationRecord
     self.main_image ||= Placeholder.image_generator(height: '350', width: '250')
     self.thumb_image ||= Placeholder.image_generator(height: '150', width: '250')
   end
+
 end
