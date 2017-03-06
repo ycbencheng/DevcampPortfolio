@@ -22,10 +22,10 @@ class PortfoliosController < ApplicationController
         
       end
     end
-end
+  end
 
   def edit
-        
+
   end
 
   def update
@@ -65,4 +65,3 @@ end
                                      )
     end
 end
-
