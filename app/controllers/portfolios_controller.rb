@@ -25,6 +25,7 @@ class PortfoliosController < ApplicationController
 end
 
   def edit
+        
   end
 
   def update
