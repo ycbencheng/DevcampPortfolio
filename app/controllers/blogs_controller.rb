@@ -19,7 +19,6 @@ class BlogsController < ApplicationController
 
   # GET /blogs/1/edit
   def edit
-  
   end
 
   # POST /blogs
