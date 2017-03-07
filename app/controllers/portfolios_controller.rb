@@ -44,6 +44,7 @@ end
   end
 
   def destroy
+    
     @portfolio_item.destroy
 
     respond_to do |format|
