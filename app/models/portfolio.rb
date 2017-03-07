@@ -7,7 +7,6 @@ class Portfolio < ApplicationRecord
 
   def self.angular
     where(subtitle: 'Angular')
-    
   end
 
   scope :ruby_on_rails, -> { where(subtitle: 'Ruby on rails')}
@@ -18,5 +17,4 @@ class Portfolio < ApplicationRecord
     self.main_image ||= Placeholder.image_generator(height: '350', width: '250')
     self.thumb_image ||= Placeholder.image_generator(height: '150', width: '250')
   end
-
 end
