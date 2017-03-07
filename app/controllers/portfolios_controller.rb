@@ -1,6 +1,6 @@
 class PortfoliosController < ApplicationController
   before_action :set_portfolio, only: [:edit, :update, :show, :destroy]
-
+  layout "portfolio"
   def index
     @portfolio_items = Portfolio.all
   end
@@ -22,9 +22,10 @@ class PortfoliosController < ApplicationController
         
       end
     end
-end
+  end
 
   def edit
+
   end
 
   def update
@@ -65,4 +66,3 @@ end
                                      )
     end
 end
-
