@@ -11,14 +11,16 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
+  <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     
     <%= render "shared/nav", location: 'top' %>
   
-  <%= login_helper %>
-    
+    <%= login_helper %>
+
     <%= yield %>
-  Thanks for visiting <% session[:source] %>
+    <%= source_helper("application")%>
+    
+
   </body>
 </html>
