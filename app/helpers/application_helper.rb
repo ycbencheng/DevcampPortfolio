@@ -16,4 +16,8 @@ module ApplicationHelper
     end
   end
 
+
+  def copyright_generator
+    BcViewTool::Renderer.copyright 'Ben Cheng', 'All rights reserved'
+  end
 end
