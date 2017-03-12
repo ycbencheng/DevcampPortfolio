@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "font-awesome";
 
 /*
  * Globals
@@ -25,7 +26,6 @@ h6, .h6 {
   font-weight: normal;
   color: #333;
 }
-
 
 /*
  * Override Bootstrap's default container.
@@ -165,4 +165,12 @@ h6, .h6 {
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+
+/*
+ * Custome Styles
+ */
+.social-links li {
+  font-size: 2.5em;
+
 }
