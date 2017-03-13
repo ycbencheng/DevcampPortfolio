@@ -31,7 +31,7 @@ puts "5 skills created"
     subtitle: "Ruby on rails",
     body: "abcdefg abcdefg abcdefg abcdefg",
     main_image: "http://placehold.it/350x350",
-    thumb_image: "http://placehold.it/150x150",
+    thumb_image: "http://placehold.it/250x250",
     )
   end
 
