@@ -1,6 +1,7 @@
 class PortfoliosController < ApplicationController
   before_action :set_portfolio, only: [:edit, :update, :show, :destroy]
   layout "portfolio"
+  access all: [:show, :index], user:{except: [:destroy, :new, :create, :update, :edit, :sort]}, site_admin: :all
   def index
     @portfolio_items = Portfolio.by_position
   end
@@ -9,7 +10,7 @@ class PortfoliosController < ApplicationController
     params[:order].each do |key, value|
       Portfolio.find(value[:id]).update(position: value[:position])
     end
-    
+
     render nothing:true
   end
 
@@ -53,7 +54,6 @@ class PortfoliosController < ApplicationController
   end
 
   def destroy
-    
     @portfolio_item.destroy
 
     respond_to do |format|
