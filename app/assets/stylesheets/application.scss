@@ -4,6 +4,11 @@
  * Globals
  */
 
+* {
+  font-family: Helvetica;
+}
+
+
 /* Links */
 a,
 a:focus,
@@ -96,7 +101,7 @@ body {
   border-bottom-color: #fff;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 50em) {
   .masthead-brand {
     float: left;
   }
@@ -158,7 +163,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 60rem;
+    width: 60em;
   }
 }
 
@@ -200,7 +205,15 @@ body {
   background-size: cover;
 }
 
-.app-footer{
+.app-footer {
   color: #fff;
+}
 
+.tech-news {
+  margin: 20px;
+}
+
+.tech-news > .card {
+  background-color: #4099FF;
+  padding: 30px;
 }
