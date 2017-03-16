@@ -9,6 +9,7 @@
 
   get 'contact', to: 'pages#contact' 
   get 'about', to: 'pages#about'
+  get 'tech-news', to: 'pages#tech_news'
   
   resources :blogs do 
     member do
