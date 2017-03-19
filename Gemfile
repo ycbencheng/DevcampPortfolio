@@ -26,9 +26,9 @@ gem 'jbuilder', '~> 2.5'
 
 
 group :development, :test do
-
   gem 'byebug', platform: :mri
-end
+  gem 'pry-byebug'
+end 
 
 group :development do
 
