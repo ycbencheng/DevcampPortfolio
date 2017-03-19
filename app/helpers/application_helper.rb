@@ -35,6 +35,10 @@ module ApplicationHelper
         title: 'blog'
       },
       {
+        url: tech_news_path,
+        title: 'news'
+      },
+      {
         url: about_path,
         title: 'about'
       },
