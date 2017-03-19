@@ -21,9 +21,9 @@
     <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
 
     <%= yield %>
-
-    <%= render 'shared/portfolio_footer' %>
-
     <%= alert %>
+    <%= render 'shared/portfolio_footer' %>
+      <%= source_helper("application")%>
+    
   </body>
 </html>
