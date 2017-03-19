@@ -67,7 +67,7 @@ module ApplicationHelper
   end
   
   def alert_generator msg
-    js add_gritter(msg, title: "Ben Cheng's Portfolio", sticky: false)
+    js add_gritter(msg, title: "Ben Cheng's Portfolio", sticky: false, time: 800)
   end
   def copyright_generator
     BcViewTool::Renderer.copyright 'Ben Cheng', 'All rights reserved'
