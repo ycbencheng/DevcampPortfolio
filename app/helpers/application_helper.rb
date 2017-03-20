@@ -1,50 +1,50 @@
 module ApplicationHelper
   def login_helper style = ''
     if current_user.is_a?(GuestUser)
-      (link_to "register", new_user_registration_path, class: style) +
+      (link_to "Register", new_user_registration_path, class: style) +
       " ".html_safe +
-      (link_to "login", new_user_session_path, class: style)
+      (link_to "Login", new_user_session_path, class: style)
     else
-      link_to "logout", destroy_user_session_path, method: :delete, class: style
+      link_to "Logout", destroy_user_session_path, method: :delete, class: style
     end
   end
 
-  def source_helper(styles)
+  def source_helper(layout_name)
     if session[:source]
-      greeting = "Thanks for visiting me from #{session[:source]}, please feel free to #{ link_to 'contact me', contact_path } if you'd like to work together."
-      content_tag(:div, greeting.html_safe, class: styles)
+      greeting = "Thanks for visiting me from #{session[:source]} and you are on the #{layout_name} layout"
+      content_tag(:p, greeting, class: "source-greeting")
     end
   end
 
   def copyright_generator
-    DevcampViewTool::Renderer.copyright 'Ben Cheng', 'All rights reserved'
+    DevcampViewTool::Renderer.copyright 'ycbencheng', 'All rights reserved'
   end
 
   def nav_items
     [
       {
         url: root_path,
-        title: 'home'
+        title: 'Home'
       },
       {
-        url: portfolios_path,
-        title: 'portfolio'
-      },
-      {
-        url: blogs_path,
-        title: 'blog'
-      },
-      {
-        url: tech_news_path,
-        title: 'news'
-      },
-      {
-        url: about_path,
-        title: 'about'
+        url: about_me_path,
+        title: 'About'
       },
       {
         url: contact_path,
-        title: 'contact'
+        title: 'Contact'
+      },
+      {
+        url: blogs_path,
+        title: 'Blog'
+      },
+      {
+        url: portfolios_path,
+        title: 'Portfolio'
+      },
+      {
+        url: tech_news_path,
+        title: 'Tech News'
       },
     ]
   end
@@ -64,17 +64,15 @@ module ApplicationHelper
   end
 
   def alerts
-    alert =(flash[:alert] || flash[:error] || flash[:notice])
-      if alert
-        alert_generator alert
-      end
-  end
-  
-  def alert_generator msg
-    js add_gritter(msg, title: "Ben Cheng's Portfolio", sticky: false, time: 800)
-  end
-  def copyright_generator
-    BcViewTool::Renderer.copyright 'Ben Cheng', 'All rights reserved'
-  end
-end
+    alert = (flash[:alert] || flash[:error] || flash[:notice])
 
+    if alert
+      alert_generator alert
+    end
+  end
+
+  def alert_generator msg
+    js add_gritter(msg, title: "Ben Cheng's Portfolio", sticky: false)
+  end
+
+end

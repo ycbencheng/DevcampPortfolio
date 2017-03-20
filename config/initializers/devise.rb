@@ -6,13 +6,13 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = 'f82526e04ae46699d8ae662a1f5ea40b621a73b453ff42600e9872870a126c8122b9c5fb7657ac919b6590e1526e06b671abae1e7e20835472109e1e0b3a1bec'
+  # config.secret_key = 'ab51baa81bc371805501023a0994766b5b6c45f90d5eab3db78d3127e41bdb21e2b5bd7e1c591a201905355b6f54611bbecee99dc483ae9f0b23be27e0884c46'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
+  config.mailer_sender = 'support@devcamp.com'
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
@@ -108,7 +108,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = 'dbab6402142bb9f1ca222973519771667510d5a1553a60a8edaebc2af4be7f480299d66216b616bd37df6dcb56b6bdc020bb5d69b02fc7d7c9f27efba0c210f2'
+  # config.pepper = '3a81ce13527ff49db30cae91de65ea7f6603f6ad71604d6762bfa6188d3d0bc398fa72df78d2dd346d1e3dc050cda6b81b3da5c9ff90acabcf1cce1254f90833'
 
   # Send a notification email when the user's password is changed
   # config.send_password_change_notification = false
@@ -243,9 +243,8 @@ Devise.setup do |config|
 
   # The default HTTP method used to sign out a resource. Default is :delete.
   config.sign_out_via = :delete
-
-  config.secret_key = 'a5987a8e9b60f62bac437fbac39d6a92e8868f8238912fa6539c9bca72e983cd89ef52d9b451d85624a4a0d63fbf1bde5bc4f7b2389e3dcd5c75a11bb3e62e52'
-
+  
+  config.secret_key = '9ea4f8712c1d7ede443dc3c9dd8c73ac331ce0361c015b9298c0407c3501b167605f17ea2973fb6205cca5e31e71fd6f91609814c9fb423f04c6fccb93106222'
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
