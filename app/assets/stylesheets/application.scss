@@ -4,9 +4,22 @@
 /*
  * Globals
  */
-
+ 
 * {
-  font-family: futura;
+  font-family: "Helvetica Light", Helvetica, Arial, sans-serif;
+
+}
+
+h2{
+  font-size: 24px;
+}
+
+h3, h4 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 18px;
 }
 
 /* Links */
@@ -14,6 +27,7 @@ a,
 a:focus,
 a:hover {
   color: #fff;
+  font-size: 18px;
 }
 
 /* Custom default button */
@@ -38,7 +52,7 @@ body {
 
 body {
   text-align: center;
-  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+  text-shadow: 0 .01rem .01rem rgba(0,0,0,.5);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -78,7 +92,7 @@ body {
 }
 
 .nav-masthead .nav-link {
-  padding: .8rem 0;
+  padding: 0;
   color: #000;
   background-color: transparent;
   
@@ -208,7 +222,7 @@ body {
 }
 
 .app-footer {
-  color: white;
+  color: black;
 }
 
 .tech-news {
@@ -217,30 +231,27 @@ body {
 }
 
 .tech-news > .card {
-  padding: 30px;
+  padding: 25px;
 }
 
 .tech-news a {
-  color: green;
+  color: #4099FF;
 }
 
 .app-card-container {
-  color: black;
   text-align: left;
 }
 
 .app-card-container > .card {
-  padding: 35px;
+  padding: 20px;
 }
 
 .profile-img {
-  border: 1px solid grey;
+  border: 2px solid grey;
 
 }
 
-.card-block {
-  margin-top: 10px 0 10px 0;
-}
+
 
 
 
